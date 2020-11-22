@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Membuat Live Search PHP Ajax - Sekolah Program</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -42,23 +41,25 @@
         </div>
         <a href="https://sekolahprogram.com" class="btn btn-success mt-3 btn-block" target="_blank" rel="noopener noreferrer">By Sekolah Program</a>
     </div>
-</body>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#search').on('keyup', function() {
-            $.ajax({
-                type: 'POST',
-                url: 'search.php',
-                data: {
-                    search: $(this).val()
-                },
-                cache: false,
-                success: function(data) {
-                    $('#tampil').html(data);
-                }
+
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#search').on('keyup', function() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'search.php',
+                    data: {
+                        search: $(this).val()
+                    },
+                    cache: false,
+                    success: function(data) {
+                        $('#tampil').html(data);
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>

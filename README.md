@@ -3,6 +3,8 @@ Pada kode sumber berikut ini untuk membuat live search dengan PHP dan Ajax jQuer
 
 Baca lebih lanjut: [Membuat Live Search PHP Ajax](https://sekolahprogram.com/@febrihidayan/membuat-live-search-php-ajax)
 
+![hasil](hasil.gif)
+
 ## Pemilik
 - [Febri Hidayan](https://github.com/febrihidayan)
 
